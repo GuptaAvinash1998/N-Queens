@@ -1,0 +1,682 @@
+Script started on Sat 23 Jun 2018 04:08:09 PM EDT
+[?1034hbash-4.1$ uname -a
+Linux Zeus-2 2.6.32-696.18.7.el6.centos.plus.x86_64 #1 SMP Tue Jan 9 14:11:50 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+bash-4.1$ date
+Sat Jun 23 16:08:13 EDT 2018
+bash-4.1$ pwd
+/home/agupta23/Summer-CS262/project1_agupta23_2B3
+bash-4.1$ ;s
+bash: syntax error near unexpected token `;'
+bash-4.1$ ls
+Makefile  project1_agupta23_2B3.c  project1_typerscript_agupta23_2B3
+bash-4.1$ cat Makefile
+#Avinash Gupta
+#G01009180
+#CS262, Lab Section 2B3
+#Project 1
+
+all: project1_agupta23_2B3.c
+	gcc -g -Wall -o project1_agupta23_2B3 project1_agupta23_2B3.c -lm
+
+clean:
+	rm project1_agupta23_2B3
+bash-4.1$ make all
+gcc -g -Wall -o project1_agupta23_2B3 project1_agupta23_2B3.c -lm
+bash-4.1$ ls
+Makefile  project1_agupta23_2B3  project1_agupta23_2B3.c  project1_typerscript_agupta23_2B3
+bash-4.1$ ./project1_agupta23_2B3 MACRO_GUARD
+This permutation does solve the problem for the board of size 4
+[ 2 0 3 1 ]
+ -  -  *  - 
+ *  -  -  - 
+ -  -  -  * 
+ -  *  -  - 
+Solution 1 found after 12 permutations
+For solution 1, we ran randperm 12 times and checkboard 12 times
+Solution 2 found after 29 permutations
+For solution 2, we ran randperm 17 times and checkboard 17 times
+Solution 3 found after 30 permutations
+For solution 3, we ran randperm 1 times and checkboard 1 times
+Solution 4 found after 34 permutations
+For solution 4, we ran randperm 4 times and checkboard 4 times
+Solution 5 found after 35 permutations
+For solution 5, we ran randperm 1 times and checkboard 1 times
+Solution 6 found after 36 permutations
+For solution 6, we ran randperm 1 times and checkboard 1 times
+Solution 7 found after 44 permutations
+For solution 7, we ran randperm 8 times and checkboard 8 times
+Solution 8 found after 47 permutations
+For solution 8, we ran randperm 3 times and checkboard 3 times
+Solution 9 found after 57 permutations
+For solution 9, we ran randperm 10 times and checkboard 10 times
+Solution 10 found after 58 permutations
+For solution 10, we ran randperm 1 times and checkboard 1 times
+
+size		min		max		mean		size**size		size!
+4		12		58		38		256.000000			24
+
+This permutation does solve the problem for the board of size 5
+[ 2 4 1 3 0 ]
+ -  -  *  -  - 
+ -  -  -  -  * 
+ -  *  -  -  - 
+ -  -  -  *  - 
+ *  -  -  -  - 
+Solution 1 found after 4 permutations
+For solution 1, we ran randperm 4 times and checkboard 4 times
+Solution 2 found after 6 permutations
+For solution 2, we ran randperm 2 times and checkboard 2 times
+Solution 3 found after 8 permutations
+For solution 3, we ran randperm 2 times and checkboard 2 times
+Solution 4 found after 12 permutations
+For solution 4, we ran randperm 4 times and checkboard 4 times
+Solution 5 found after 15 permutations
+For solution 5, we ran randperm 3 times and checkboard 3 times
+Solution 6 found after 52 permutations
+For solution 6, we ran randperm 37 times and checkboard 37 times
+Solution 7 found after 53 permutations
+For solution 7, we ran randperm 1 times and checkboard 1 times
+Solution 8 found after 64 permutations
+For solution 8, we ran randperm 11 times and checkboard 11 times
+Solution 9 found after 89 permutations
+For solution 9, we ran randperm 25 times and checkboard 25 times
+Solution 10 found after 117 permutations
+For solution 10, we ran randperm 28 times and checkboard 28 times
+
+size		min		max		mean		size**size		size!
+5		4		117		42		3125.000000			120
+
+This permutation does solve the problem for the board of size 6
+[ 1 3 5 0 2 4 ]
+ -  *  -  -  -  - 
+ -  -  -  *  -  - 
+ -  -  -  -  -  * 
+ *  -  -  -  -  - 
+ -  -  *  -  -  - 
+ -  -  -  -  *  - 
+Solution 1 found after 314 permutations
+For solution 1, we ran randperm 314 times and checkboard 314 times
+Solution 2 found after 327 permutations
+For solution 2, we ran randperm 13 times and checkboard 13 times
+Solution 3 found after 328 permutations
+For solution 3, we ran randperm 1 times and checkboard 1 times
+Solution 4 found after 458 permutations
+For solution 4, we ran randperm 130 times and checkboard 130 times
+Solution 5 found after 513 permutations
+For solution 5, we ran randperm 55 times and checkboard 55 times
+Solution 6 found after 745 permutations
+For solution 6, we ran randperm 232 times and checkboard 232 times
+Solution 7 found after 910 permutations
+For solution 7, we ran randperm 165 times and checkboard 165 times
+Solution 8 found after 938 permutations
+For solution 8, we ran randperm 28 times and checkboard 28 times
+Solution 9 found after 1040 permutations
+For solution 9, we ran randperm 102 times and checkboard 102 times
+Solution 10 found after 1065 permutations
+For solution 10, we ran randperm 25 times and checkboard 25 times
+
+size		min		max		mean		size**size		size!
+6		4		1065		663		46656.000000			720
+
+This permutation does solve the problem for the board of size 7
+[ 4 1 5 2 6 3 0 ]
+ -  -  -  -  *  -  - 
+ -  *  -  -  -  -  - 
+ -  -  -  -  -  *  - 
+ -  -  *  -  -  -  - 
+ -  -  -  -  -  -  * 
+ -  -  -  *  -  -  - 
+ *  -  -  -  -  -  - 
+Solution 1 found after 145 permutations
+For solution 1, we ran randperm 145 times and checkboard 145 times
+Solution 2 found after 310 permutations
+For solution 2, we ran randperm 165 times and checkboard 165 times
+Solution 3 found after 320 permutations
+For solution 3, we ran randperm 10 times and checkboard 10 times
+Solution 4 found after 393 permutations
+For solution 4, we ran randperm 73 times and checkboard 73 times
+Solution 5 found after 430 permutations
+For solution 5, we ran randperm 37 times and checkboard 37 times
+Solution 6 found after 506 permutations
+For solution 6, we ran randperm 76 times and checkboard 76 times
+Solution 7 found after 599 permutations
+For solution 7, we ran randperm 93 times and checkboard 93 times
+Solution 8 found after 677 permutations
+For solution 8, we ran randperm 78 times and checkboard 78 times
+Solution 9 found after 790 permutations
+For solution 9, we ran randperm 113 times and checkboard 113 times
+Solution 10 found after 815 permutations
+For solution 10, we ran randperm 25 times and checkboard 25 times
+
+size		min		max		mean		size**size		size!
+7		4		1065		498		823543.000000			5040
+
+This permutation does solve the problem for the board of size 8
+[ 2 5 1 6 4 0 7 3 ]
+ -  -  *  -  -  -  -  - 
+ -  -  -  -  -  *  -  - 
+ -  *  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  - 
+ -  -  -  -  *  -  -  - 
+ *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  * 
+ -  -  -  *  -  -  -  - 
+Solution 1 found after 441 permutations
+For solution 1, we ran randperm 441 times and checkboard 441 times
+Solution 2 found after 731 permutations
+For solution 2, we ran randperm 290 times and checkboard 290 times
+Solution 3 found after 1039 permutations
+For solution 3, we ran randperm 308 times and checkboard 308 times
+Solution 4 found after 1206 permutations
+For solution 4, we ran randperm 167 times and checkboard 167 times
+Solution 5 found after 1484 permutations
+For solution 5, we ran randperm 278 times and checkboard 278 times
+Solution 6 found after 1594 permutations
+For solution 6, we ran randperm 110 times and checkboard 110 times
+Solution 7 found after 1764 permutations
+For solution 7, we ran randperm 170 times and checkboard 170 times
+Solution 8 found after 2689 permutations
+For solution 8, we ran randperm 925 times and checkboard 925 times
+Solution 9 found after 2906 permutations
+For solution 9, we ran randperm 217 times and checkboard 217 times
+Solution 10 found after 3092 permutations
+For solution 10, we ran randperm 186 times and checkboard 186 times
+
+size		min		max		mean		size**size		size!
+8		4		3092		1694		16777216.000000			40320
+
+This permutation does solve the problem for the board of size 9
+[ 3 6 4 1 8 0 5 7 2 ]
+ -  -  -  *  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  - 
+ -  -  -  -  *  -  -  -  - 
+ -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  * 
+ *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  *  -  -  - 
+ -  -  -  -  -  -  -  *  - 
+ -  -  *  -  -  -  -  -  - 
+Solution 1 found after 571 permutations
+For solution 1, we ran randperm 571 times and checkboard 571 times
+Solution 2 found after 710 permutations
+For solution 2, we ran randperm 139 times and checkboard 139 times
+Solution 3 found after 3078 permutations
+For solution 3, we ran randperm 2368 times and checkboard 2368 times
+Solution 4 found after 5306 permutations
+For solution 4, we ran randperm 2228 times and checkboard 2228 times
+Solution 5 found after 5359 permutations
+For solution 5, we ran randperm 53 times and checkboard 53 times
+Solution 6 found after 5920 permutations
+For solution 6, we ran randperm 561 times and checkboard 561 times
+Solution 7 found after 7346 permutations
+For solution 7, we ran randperm 1426 times and checkboard 1426 times
+Solution 8 found after 7485 permutations
+For solution 8, we ran randperm 139 times and checkboard 139 times
+Solution 9 found after 10040 permutations
+For solution 9, we ran randperm 2555 times and checkboard 2555 times
+Solution 10 found after 12788 permutations
+For solution 10, we ran randperm 2748 times and checkboard 2748 times
+
+size		min		max		mean		size**size		size!
+9		4		12788		5860		387420489.000000			362880
+
+This permutation does solve the problem for the board of size 10
+[ 9 6 1 5 2 0 7 4 8 3 ]
+ -  -  -  -  -  -  -  -  -  * 
+ -  -  -  -  -  -  *  -  -  - 
+ -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  *  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  *  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  - 
+ -  -  -  *  -  -  -  -  -  - 
+Solution 1 found after 3273 permutations
+For solution 1, we ran randperm 3273 times and checkboard 3273 times
+Solution 2 found after 4219 permutations
+For solution 2, we ran randperm 946 times and checkboard 946 times
+Solution 3 found after 6731 permutations
+For solution 3, we ran randperm 2512 times and checkboard 2512 times
+Solution 4 found after 9449 permutations
+For solution 4, we ran randperm 2718 times and checkboard 2718 times
+Solution 5 found after 21914 permutations
+For solution 5, we ran randperm 12465 times and checkboard 12465 times
+Solution 6 found after 27795 permutations
+For solution 6, we ran randperm 5881 times and checkboard 5881 times
+Solution 7 found after 29589 permutations
+For solution 7, we ran randperm 1794 times and checkboard 1794 times
+Solution 8 found after 41250 permutations
+For solution 8, we ran randperm 11661 times and checkboard 11661 times
+Solution 9 found after 45283 permutations
+For solution 9, we ran randperm 4033 times and checkboard 4033 times
+Solution 10 found after 48903 permutations
+For solution 10, we ran randperm 3620 times and checkboard 3620 times
+
+size		min		max		mean		size**size		size!
+10		4		48903		23840		10000000000.000000			3628800
+
+This permutation does solve the problem for the board of size 11
+[ 4 9 5 8 10 0 2 6 1 3 7 ]
+ -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  - 
+ -  -  -  -  -  *  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  -  -  -  -  -  -  * 
+ *  -  -  -  -  -  -  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  - 
+Solution 1 found after 9576 permutations
+For solution 1, we ran randperm 9576 times and checkboard 9576 times
+Solution 2 found after 31268 permutations
+For solution 2, we ran randperm 21692 times and checkboard 21692 times
+Solution 3 found after 39136 permutations
+For solution 3, we ran randperm 7868 times and checkboard 7868 times
+Solution 4 found after 43544 permutations
+For solution 4, we ran randperm 4408 times and checkboard 4408 times
+Solution 5 found after 74697 permutations
+For solution 5, we ran randperm 31153 times and checkboard 31153 times
+Solution 6 found after 117304 permutations
+For solution 6, we ran randperm 42607 times and checkboard 42607 times
+Solution 7 found after 124645 permutations
+For solution 7, we ran randperm 7341 times and checkboard 7341 times
+Solution 8 found after 124660 permutations
+For solution 8, we ran randperm 15 times and checkboard 15 times
+Solution 9 found after 138080 permutations
+For solution 9, we ran randperm 13420 times and checkboard 13420 times
+Solution 10 found after 140336 permutations
+For solution 10, we ran randperm 2256 times and checkboard 2256 times
+
+size		min		max		mean		size**size		size!
+11		4		140336		84324		285311670611.000000			39916800
+
+This permutation does solve the problem for the board of size 12
+[ 4 8 5 0 6 1 11 7 3 10 2 9 ]
+ -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  -  -  *  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  - 
+ -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  - 
+Solution 1 found after 32152 permutations
+For solution 1, we ran randperm 32152 times and checkboard 32152 times
+Solution 2 found after 33042 permutations
+For solution 2, we ran randperm 890 times and checkboard 890 times
+Solution 3 found after 59186 permutations
+For solution 3, we ran randperm 26144 times and checkboard 26144 times
+Solution 4 found after 151786 permutations
+For solution 4, we ran randperm 92600 times and checkboard 92600 times
+Solution 5 found after 169914 permutations
+For solution 5, we ran randperm 18128 times and checkboard 18128 times
+Solution 6 found after 182131 permutations
+For solution 6, we ran randperm 12217 times and checkboard 12217 times
+Solution 7 found after 232138 permutations
+For solution 7, we ran randperm 50007 times and checkboard 50007 times
+Solution 8 found after 232629 permutations
+For solution 8, we ran randperm 491 times and checkboard 491 times
+Solution 9 found after 255096 permutations
+For solution 9, we ran randperm 22467 times and checkboard 22467 times
+Solution 10 found after 564419 permutations
+For solution 10, we ran randperm 309323 times and checkboard 309323 times
+
+size		min		max		mean		size**size		size!
+12		4		564419		191249		8916100448256.000000			479001600
+
+This permutation does solve the problem for the board of size 13
+[ 11 7 2 6 12 1 4 0 10 8 5 3 9 ]
+ -  -  -  -  -  -  -  -  -  -  -  *  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  -  - 
+Solution 1 found after 2472 permutations
+For solution 1, we ran randperm 2472 times and checkboard 2472 times
+Solution 2 found after 94062 permutations
+For solution 2, we ran randperm 91590 times and checkboard 91590 times
+Solution 3 found after 199663 permutations
+For solution 3, we ran randperm 105601 times and checkboard 105601 times
+Solution 4 found after 281069 permutations
+For solution 4, we ran randperm 81406 times and checkboard 81406 times
+Solution 5 found after 338463 permutations
+For solution 5, we ran randperm 57394 times and checkboard 57394 times
+Solution 6 found after 349059 permutations
+For solution 6, we ran randperm 10596 times and checkboard 10596 times
+Solution 7 found after 413930 permutations
+For solution 7, we ran randperm 64871 times and checkboard 64871 times
+Solution 8 found after 431552 permutations
+For solution 8, we ran randperm 17622 times and checkboard 17622 times
+Solution 9 found after 698834 permutations
+For solution 9, we ran randperm 267282 times and checkboard 267282 times
+Solution 10 found after 757275 permutations
+For solution 10, we ran randperm 58441 times and checkboard 58441 times
+
+size		min		max		mean		size**size		size!
+13		4		757275		356637		302875106592253.000000			1932053504
+
+This permutation does solve the problem for the board of size 14
+[ 5 10 4 6 11 3 12 0 9 13 2 8 1 7 ]
+ -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+Solution 1 found after 110357 permutations
+For solution 1, we ran randperm 110357 times and checkboard 110357 times
+Solution 2 found after 223233 permutations
+For solution 2, we ran randperm 112876 times and checkboard 112876 times
+Solution 3 found after 487917 permutations
+For solution 3, we ran randperm 264684 times and checkboard 264684 times
+Solution 4 found after 777841 permutations
+For solution 4, we ran randperm 289924 times and checkboard 289924 times
+Solution 5 found after 788116 permutations
+For solution 5, we ran randperm 10275 times and checkboard 10275 times
+Solution 6 found after 1005866 permutations
+For solution 6, we ran randperm 217750 times and checkboard 217750 times
+Solution 7 found after 1345889 permutations
+For solution 7, we ran randperm 340023 times and checkboard 340023 times
+Solution 8 found after 1397936 permutations
+For solution 8, we ran randperm 52047 times and checkboard 52047 times
+Solution 9 found after 1640093 permutations
+For solution 9, we ran randperm 242157 times and checkboard 242157 times
+Solution 10 found after 1713978 permutations
+For solution 10, we ran randperm 73885 times and checkboard 73885 times
+
+size		min		max		mean		size**size		size!
+14		4		1713978		949122		11112006825558016.000000			1278945280
+
+This permutation does solve the problem for the board of size 15
+[ 9 11 3 7 0 13 1 4 6 14 10 2 5 12 8 ]
+ -  -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+Solution 1 found after 470863 permutations
+For solution 1, we ran randperm 470863 times and checkboard 470863 times
+Solution 2 found after 1335560 permutations
+For solution 2, we ran randperm 864697 times and checkboard 864697 times
+Solution 3 found after 2243345 permutations
+For solution 3, we ran randperm 907785 times and checkboard 907785 times
+Solution 4 found after 2259112 permutations
+For solution 4, we ran randperm 15767 times and checkboard 15767 times
+Solution 5 found after 2804408 permutations
+For solution 5, we ran randperm 545296 times and checkboard 545296 times
+Solution 6 found after 3134773 permutations
+For solution 6, we ran randperm 330365 times and checkboard 330365 times
+Solution 7 found after 3803902 permutations
+For solution 7, we ran randperm 669129 times and checkboard 669129 times
+Solution 8 found after 4269304 permutations
+For solution 8, we ran randperm 465402 times and checkboard 465402 times
+Solution 9 found after 4503646 permutations
+For solution 9, we ran randperm 234342 times and checkboard 234342 times
+Solution 10 found after 6360679 permutations
+For solution 10, we ran randperm 1857033 times and checkboard 1857033 times
+
+size		min		max		mean		size**size		size!
+15		4		6360679		3118559		437893890380859392.000000			2004310016
+
+This permutation does solve the problem for the board of size 16
+[ 8 15 3 6 11 2 0 12 4 13 1 9 14 5 7 10 ]
+ -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+ -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+Solution 1 found after 906966 permutations
+For solution 1, we ran randperm 906966 times and checkboard 906966 times
+Solution 2 found after 2880988 permutations
+For solution 2, we ran randperm 1974022 times and checkboard 1974022 times
+Solution 3 found after 3323323 permutations
+For solution 3, we ran randperm 442335 times and checkboard 442335 times
+Solution 4 found after 4115954 permutations
+For solution 4, we ran randperm 792631 times and checkboard 792631 times
+Solution 5 found after 5798335 permutations
+For solution 5, we ran randperm 1682381 times and checkboard 1682381 times
+Solution 6 found after 6318832 permutations
+For solution 6, we ran randperm 520497 times and checkboard 520497 times
+Solution 7 found after 7637504 permutations
+For solution 7, we ran randperm 1318672 times and checkboard 1318672 times
+Solution 8 found after 8501582 permutations
+For solution 8, we ran randperm 864078 times and checkboard 864078 times
+Solution 9 found after 10325382 permutations
+For solution 9, we ran randperm 1823800 times and checkboard 1823800 times
+Solution 10 found after 10592343 permutations
+For solution 10, we ran randperm 266961 times and checkboard 266961 times
+
+size		min		max		mean		size**size		size!
+16		4		10592343		6040120		18446744073709551616.000000			2004189184
+
+This permutation does solve the problem for the board of size 17
+[ 8 11 3 12 9 2 10 14 6 1 13 0 7 4 16 5 15 ]
+ -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+Solution 1 found after 1313619 permutations
+For solution 1, we ran randperm 1313619 times and checkboard 1313619 times
+Solution 2 found after 1427666 permutations
+For solution 2, we ran randperm 114047 times and checkboard 114047 times
+Solution 3 found after 1585813 permutations
+For solution 3, we ran randperm 158147 times and checkboard 158147 times
+Solution 4 found after 3863207 permutations
+For solution 4, we ran randperm 2277394 times and checkboard 2277394 times
+Solution 5 found after 7529413 permutations
+For solution 5, we ran randperm 3666206 times and checkboard 3666206 times
+Solution 6 found after 9484156 permutations
+For solution 6, we ran randperm 1954743 times and checkboard 1954743 times
+Solution 7 found after 10078456 permutations
+For solution 7, we ran randperm 594300 times and checkboard 594300 times
+Solution 8 found after 14006705 permutations
+For solution 8, we ran randperm 3928249 times and checkboard 3928249 times
+Solution 9 found after 15338701 permutations
+For solution 9, we ran randperm 1331996 times and checkboard 1331996 times
+Solution 10 found after 40297059 permutations
+For solution 10, we ran randperm 24958358 times and checkboard 24958358 times
+
+size		min		max		mean		size**size		size!
+17		4		40297059		10492479		827240261886336827392.000000			-288522240
+
+This permutation does solve the problem for the board of size 18
+[ 7 13 15 2 14 5 10 8 0 3 1 17 9 6 16 11 4 12 ]
+ -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+Solution 1 found after 16400835 permutations
+For solution 1, we ran randperm 16400835 times and checkboard 16400835 times
+Solution 2 found after 45051514 permutations
+For solution 2, we ran randperm 28650679 times and checkboard 28650679 times
+Solution 3 found after 71307555 permutations
+For solution 3, we ran randperm 26256041 times and checkboard 26256041 times
+Solution 4 found after 76850334 permutations
+For solution 4, we ran randperm 5542779 times and checkboard 5542779 times
+Solution 5 found after 89740241 permutations
+For solution 5, we ran randperm 12889907 times and checkboard 12889907 times
+Solution 6 found after 91463626 permutations
+For solution 6, we ran randperm 1723385 times and checkboard 1723385 times
+Solution 7 found after 120482431 permutations
+For solution 7, we ran randperm 29018805 times and checkboard 29018805 times
+Solution 8 found after 124083477 permutations
+For solution 8, we ran randperm 3601046 times and checkboard 3601046 times
+Solution 9 found after 145913685 permutations
+For solution 9, we ran randperm 21830208 times and checkboard 21830208 times
+Solution 10 found after 156442144 permutations
+For solution 10, we ran randperm 10528459 times and checkboard 10528459 times
+
+size		min		max		mean		size**size		size!
+18		4		156442144		93773584		39346408075296541507584.000000			-898433024
+
+This permutation does solve the problem for the board of size 19
+[ 6 17 11 7 0 2 13 8 1 14 18 5 12 4 16 10 15 9 3 ]
+ -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+Solution 1 found after 8560404 permutations
+For solution 1, we ran randperm 8560404 times and checkboard 8560404 times
+Solution 2 found after 15329450 permutations
+For solution 2, we ran randperm 6769046 times and checkboard 6769046 times
+Solution 3 found after 26528312 permutations
+For solution 3, we ran randperm 11198862 times and checkboard 11198862 times
+Solution 4 found after 47912697 permutations
+For solution 4, we ran randperm 21384385 times and checkboard 21384385 times
+Solution 5 found after 71825303 permutations
+For solution 5, we ran randperm 23912606 times and checkboard 23912606 times
+Solution 6 found after 77635797 permutations
+For solution 6, we ran randperm 5810494 times and checkboard 5810494 times
+Solution 7 found after 87681430 permutations
+For solution 7, we ran randperm 10045633 times and checkboard 10045633 times
+Solution 8 found after 93745686 permutations
+For solution 8, we ran randperm 6064256 times and checkboard 6064256 times
+Solution 9 found after 172704265 permutations
+For solution 9, we ran randperm 78958579 times and checkboard 78958579 times
+Solution 10 found after 199290318 permutations
+For solution 10, we ran randperm 26586053 times and checkboard 26586053 times
+
+size		min		max		mean		size**size		size!
+19		4		199290318		80121366		1978419655660313627328512.000000			109641728
+
+This permutation does solve the problem for the board of size 20
+[ 12 9 6 1 15 2 16 13 7 4 17 14 5 18 0 11 8 19 3 10 ]
+ -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  - 
+ -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  - 
+ -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  *  - 
+ *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  * 
+ -  -  -  *  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+ -  -  -  -  -  -  -  -  -  -  *  -  -  -  -  -  -  -  -  - 
+Solution 1 found after 25138886 permutations
+For solution 1, we ran randperm 25138886 times and checkboard 25138886 times
+Solution 2 found after 34317691 permutations
+For solution 2, we ran randperm 9178805 times and checkboard 9178805 times
+Solution 3 found after 129115634 permutations
+For solution 3, we ran randperm 94797943 times and checkboard 94797943 times
+Solution 4 found after 157352094 permutations
+For solution 4, we ran randperm 28236460 times and checkboard 28236460 times
+Solution 5 found after 178957856 permutations
+For solution 5, we ran randperm 21605762 times and checkboard 21605762 times
+Solution 6 found after 236994078 permutations
+For solution 6, we ran randperm 58036222 times and checkboard 58036222 times
+Solution 7 found after 358962908 permutations
+For solution 7, we ran randperm 121968830 times and checkboard 121968830 times
+Solution 8 found after 557220952 permutations
+For solution 8, we ran randperm 198258044 times and checkboard 198258044 times
+Solution 9 found after 646305948 permutations
+For solution 9, we ran randperm 89084996 times and checkboard 89084996 times
+Solution 10 found after 812657567 permutations
+For solution 10, we ran randperm 166351619 times and checkboard 166351619 times
+
+size		min		max		mean		size**size		size!
+20		4		812657567		-115794368		104857600000000000000000000.000000			-2102132736
+
+bash-4.1$ ls
+Makefile  project1_agupta23_2B3  project1_agupta23_2B3.c  project1_typerscript_agupta23_2B3
+bash-4.1$ make clean
+rm project1_agupta23_2B3
+bash-4.1$ ls
+Makefile  project1_agupta23_2B3.c  project1_typerscript_agupta23_2B3
+bash-4.1$ exit
+
+Script done on Sat 23 Jun 2018 04:23:28 PM EDT
